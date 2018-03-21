@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#000000">
+  <script src="scripts/WebAR_Camera.js"></script>
+  <!--<script src="//ads.pictela.com/ads/jsapi/ADTECH.js"></script>-->
+  <title>App</title>
+</head>
+<body>
+<div id="container">
+  <video id="webar_video" width="320" height="568" autoplay></video>
+</div>
+<div class="log">00</div>
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        WebAR_Project.init({container:'#container', width: 320, height: 568});
+        /*WebARCamera.camera.init({
+            camera: 'environment',
+            domElementID: 'webar_video',
+            debug: true
+        });*/
+    });
+    /*ADTECH.ready(function () {
+
+        // this starts the creative
+        // WebAR_Project.init({container:'#container', width: 320, height: 568});
+
+        // this starts the camera
+        WebARCamera.camera.init({
+            camera: 'environment',
+            domElementID: 'webar_video',
+            debug: true
+        });
+
+    });*/
+</script>
+</body>
+</html>
